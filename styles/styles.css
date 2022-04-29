@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap");
+.wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: #05AFC1;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+a {
+  display: inline-block;
+}
+
+.topNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.topNav ul li {
+  margin: 0 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.topNav ul li:nth-child(1) {
+  color: #F0EFED;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: #2C2C2C;
+}
+
+h1 {
+  font-family: "Lora", serif;
+  margin: 0;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: #2C2C2C;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  color: rgb(246, 246, 246);
+  letter-spacing: 1px;
+}
+
+button {
+  font-size: 1rem;
+}
+
+nav {
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: "Lora", serif;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+}

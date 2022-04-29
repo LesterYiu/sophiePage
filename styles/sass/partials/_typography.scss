@@ -1,0 +1,86 @@
+// Colours
+
+// Primary text (black) - #2c2c2c
+// Secondary (dark grey blue) - #285e64
+// Tertiary (orangey yellow) - #F6A823
+// Quaternary (grey) - #4F4F4F
+// Quinary (accent) - #05AFC1
+// Senary (rust red) - #A82706
+// whiteShade (white shade) - #F0EFED
+
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $bodyFont;
+    font-size: 1rem;
+    color: $primary;
+}
+
+h1 {
+    font-family: $headingFont;
+    margin:0;
+}
+
+h2,
+h3,
+h4 {
+    margin:0;
+    color: $primary;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+    color: rgba(246, 246, 246);
+    letter-spacing: 1px;
+}
+
+button {
+    font-size: 1rem;
+}
+
+nav {
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.logo {
+    font-family: $headingFont;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+}
