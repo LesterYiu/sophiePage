@@ -1,0 +1,44 @@
+header {
+    background-color: $tertiary;
+
+    .headerContent {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 60vh;
+        padding: 50px 0;
+        align-items:center;
+    }
+
+    .headerText {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        h1 {
+            padding-left: 70px;
+        }
+    }
+
+    .headerTitleImage {
+        position: relative;
+        width: 100%;
+        img {
+            position: absolute;
+            top: -90px;
+        }
+    }
+
+    .headerImage {
+        width: 40%;
+        height: 20vh;
+        position:relative;
+
+            img {
+                box-shadow: 18px 18px 0px 2px $whiteShade;
+                position:absolute;
+                top: -180px;
+            }
+    }
+}
