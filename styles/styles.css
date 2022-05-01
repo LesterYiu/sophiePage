@@ -618,6 +618,9 @@ a {
       flex-basis: 31.5%;
 }
 
+.blogPage {
+  background-color: #F0EFED;
+}
 .blogPage .blogNav {
   padding: 20px 0;
   background-color: #F6A823;
@@ -647,12 +650,57 @@ a {
 .blogPage header h1 {
   position: absolute;
   bottom: -39px;
-  left: 0;
+  left: 105px;
 }
 .blogPage header img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
+}
+.blogPage section {
+  padding: 100px 0;
+}
+
+.blogFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blogFlex .blogInformation {
+  -ms-flex-preferred-size: 33.3333333333%;
+      flex-basis: 33.3333333333%;
+}
+.blogFlex .blogInformation .blogHeading {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.blogFlex .blogContent {
+  -ms-flex-preferred-size: 62.6666666667%;
+      flex-basis: 62.6666666667%;
+}
+.blogFlex .blogContent .blogPublisher {
+  font-style: italic;
+}
+.blogFlex .blogContent .blogPublisher .blogUsername {
+  color: #25595E;
+  font-weight: bold;
+}
+.blogFlex .blogSection {
+  background-color: white;
+  padding: 40px;
+}
+.blogFlex .recentPosts {
+  margin-top: 40px;
+}
+.blogFlex .recentPosts .blogHeading {
+  margin-top: 0px;
 }
 
 footer {

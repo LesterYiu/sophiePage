@@ -1,4 +1,5 @@
 .blogPage {
+    background-color: $whiteShade;
 
     .blogNav {
         padding: 20px 0;
@@ -20,18 +21,66 @@
             }
         }
     }
+
     header {
         position: relative;
 
         h1 {
             position: absolute;
             bottom: -39px;
-            left: 0;
+            left: 105px;
         }
 
         img {
             object-fit: contain;
             width: 100%;
+        }
+    }
+
+    section {
+        padding: 100px 0;
+    }
+}
+
+.blogFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .blogInformation {
+        flex-basis: calc(100% / 3);
+
+        .blogHeading {
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+
+    .blogContent {
+        flex-basis: calc(((100% / 3) * 2) - 4%);
+
+        .blogPublisher {
+            font-style:italic;
+
+            .blogUsername {
+                color: #25595E;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .blogSection {
+        background-color: white;
+        padding: 40px;
+    }
+
+    .recentPosts {
+        margin-top: 40px;
+
+        .blogHeading {
+            margin-top: 0px;
         }
     }
 }
