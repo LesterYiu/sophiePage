@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophie</title>
+    <title>Home - Sophie</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://kit.fontawesome.com/15cca8e706.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <header>
+    <a class="skipMainContent" href="#mainContent">Skip to content</a>
+    <header role="banner">
         <div class="wrapper">
-            <nav class="topNav">
+            <nav class="topNav" role="navigation">
                 <ul>
                     <li>
                         <a href="#">home</a>
@@ -21,7 +22,7 @@
                         <a href="#">about</a>
                     </li>
                     <li class="logo">
-                        <a href="#">sophie</a>
+                        <a href="#">sophie<span class="sr-only">Home Page</span></a>
                     </li>
                     <li>
                         <a href="#">blog</a>
@@ -46,7 +47,7 @@
         </div>
     </header>
 
-    <main>
+    <main role="main">
 
         <section class="aboutSophie">
             <div class="wrapper">
@@ -136,7 +137,7 @@
             <img src="./assets/home-image-4.jpg" alt="">
         </section>
 
-        <section class="sophieJourney">
+        <section class="sophieJourney" id="mainContent">
             <div class="wrapper">
                 <div class="sophieJourneyFlex">
                     <div class="journeyImageContainer">
@@ -157,12 +158,24 @@
 
         <section class="gallery">
             <div class="wrapper">
-                
+                <div class="galleryFlex">
+                    <div class="galleryItem">
+                        <img src="./assets/home-image-6.jpg" alt="">
+                    </div>
+                    <div class="galleryItem">
+                        <img src="./assets/home-image-7.jpg" alt="">
+                    </div>
+                    <div class="galleryItem">
+                        <img src="./assets/home-image-8.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <footer>
-            
+        <footer role="contentinfo">
+            <div class="wrapper">
+                <p>Copyright © 2022 Juno College. Created by Lester Yiu</p>
+            </div>
         </footer>
 
     </main>

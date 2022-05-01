@@ -1,6 +1,9 @@
+@import "./partials/setup";
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap');
 @import "./partials/variables";
+@import "./partials/typography";
 @import "./partials/base";
+@import "./partials/skipContent";
 @import "./partials/topNav";
 @import "./partials/header";
 @import "./partials/aboutSophieSection";
@@ -8,4 +11,5 @@
 @import "./partials/bottomNav";
 @import "./partials/decorativeSection";
 @import "./partials/sophieJourney";
-@import "./partials/typography";
+@import "./partials/gallerySection";
+@import "./partials/footer";

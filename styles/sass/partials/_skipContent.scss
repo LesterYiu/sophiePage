@@ -1,0 +1,14 @@
+.skipMainContent {
+    position: absolute;
+    left: -100%;
+    background: white;
+    color: $tertiary;
+    font-family : $headingFont;
+    padding: 10px ;
+    transition-duration: 0.2s;
+    transition-property:all;
+}
+
+.skipMainContent:focus-within {
+    left: 0;
+}
