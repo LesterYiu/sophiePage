@@ -1,0 +1,25 @@
+.sophieJourney {
+    padding: 100px 0;
+    background-color: $whiteShade;
+
+    .sophieJourneyFlex {
+        display: flex;
+        justify-content: space-between;
+
+        .journeyImageContainer {
+            flex-basis: 30%;
+
+            img {
+                box-shadow: 20px 20px 0px 2px $tertiary;
+            }
+        }
+
+        .journeyText {
+            flex-basis: 64%;
+
+            p {
+                padding: 10px 0;
+            }
+        }
+    }
+}

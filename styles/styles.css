@@ -211,6 +211,45 @@ header .headerImage img {
   margin-left: 30px;
 }
 
+.decorativeSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #A82706;
+}
+
+.sophieJourney {
+  padding: 100px 0;
+  background-color: #F0EFED;
+}
+.sophieJourney .sophieJourneyFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sophieJourney .sophieJourneyFlex .journeyImageContainer {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.sophieJourney .sophieJourneyFlex .journeyImageContainer img {
+  -webkit-box-shadow: 20px 20px 0px 2px #F6A823;
+          box-shadow: 20px 20px 0px 2px #F6A823;
+}
+.sophieJourney .sophieJourneyFlex .journeyText {
+  -ms-flex-preferred-size: 64%;
+      flex-basis: 64%;
+}
+.sophieJourney .sophieJourneyFlex .journeyText p {
+  padding: 10px 0;
+}
+
 html {
   font-size: 125%;
 }
