@@ -1,0 +1,37 @@
+.blogPage {
+
+    .blogNav {
+        padding: 20px 0;
+        background-color: $tertiary;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            li {
+                margin: 0 30px;
+                text-transform: uppercase;
+                font-weight: 700;
+    
+                &:nth-child(4) {
+                    color: $whiteShade;
+                }
+            }
+        }
+    }
+    header {
+        position: relative;
+
+        h1 {
+            position: absolute;
+            bottom: -39px;
+            left: 0;
+        }
+
+        img {
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+}
