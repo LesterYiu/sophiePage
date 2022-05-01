@@ -1,18 +1,80 @@
 .sophieHistory {
-    padding: 100px 0;
-    
-    .historySection {
-        width: 50%;
-    }
+    padding: 75px 0 100px 0;
+    position: relative; 
 
     .sophieFavourite {
-        padding-bottom: 100px;
+
+        .favouriteImage {
+
+            img {
+                top: -135px;
+            }
+        }
+
+        .favouriteText {
+            text-align: left;
+            padding-left: 100px;
+            width: 50%;
+        }
+
     }
 
+    .sophieTravel {
+
+        .travelledImage {
+        
+            margin-left: 50px;
+
+            img {
+                top: 0px;
+                left: -125px;
+            }
+        }
+
+        .travelledText {
+            text-align: right;
+            width: 50%;
+            margin-right: 145px;
+        }
+    }
+    
+    .absoluteSenary {
+        position:absolute;
+        background-color: $senary;
+        width: 50%;
+        height: 365px;
+        top: -35px;
+        left: -30px;
+    }
+
+    .absoluteTertiary {
+        position: absolute;
+        background: $tertiary;
+        width: 50%;
+        height: 365px;
+        bottom: 85px;
+        right: 8px;
+    }
 }
 
 .sophieFavourite,
 .sophieTravel {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+.favouriteImage,
+.travelledImage {
+    width: 50%;
+    height: 365px;
+    position: relative;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        z-index: 10;
+        position: absolute;
+    }
 }
