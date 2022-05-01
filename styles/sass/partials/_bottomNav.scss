@@ -1,0 +1,33 @@
+.bottomNav {
+    background-color: $whiteShade;
+    padding: 100px 0 50px 0;
+
+    .bottomNavFlex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .bottomNavSection {
+            flex-basis: 47%;
+            padding-bottom: 25px;
+            display: flex;
+        }
+    }
+
+    .bottomIcons {
+        font-size: 1.5rem;
+        background-color: $tertiary;
+        padding: 15px;
+        border-radius: 50%;
+        flex-grow: 1;
+    }
+
+    .iconContainer {
+        position: relative;
+        top: -15px;
+    }
+
+    .bottomNavText {
+        margin-left: 30px;
+    }
+}

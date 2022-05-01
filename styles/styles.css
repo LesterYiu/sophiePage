@@ -172,6 +172,45 @@ header .headerImage img {
   position: absolute;
 }
 
+.bottomNav {
+  background-color: #F0EFED;
+  padding: 100px 0 50px 0;
+}
+.bottomNav .bottomNavFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bottomNav .bottomNavFlex .bottomNavSection {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+  padding-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.bottomNav .bottomIcons {
+  font-size: 1.5rem;
+  background-color: #F6A823;
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.bottomNav .iconContainer {
+  position: relative;
+  top: -15px;
+}
+.bottomNav .bottomNavText {
+  margin-left: 30px;
+}
+
 html {
   font-size: 125%;
 }
