@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Sophie</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/15cca8e706.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body class="contactBody">
-    <a class="skipMainContent" href="#aboutSophie">Skip to content</a>
+    <a class="skipMainContent" href="#mainContent">Skip to content</a>
     <div class="navigationBar">
         <div class="wrapper">
             <nav class="topNav" role="navigation">
@@ -41,11 +43,48 @@
     </header>
 
     <main role="main">
-        <section>
+        <section class="contactOverall" id="mainContent">
             <div class="wrapper">
                 <div class="contactFlex">
                     <div class="contactInformation">
-                        <address>info@email.com</address>
+                        <div class="socialMediaBar" aria-label="Social Media Navigation Bar">
+                            <div class="facebookIcon contactIconContainer">
+                                <a href="https://www.facebook.com/junocollegeoftech/" target="_blank" rel="noopener" aria-hidden="true">
+                                    <i class="fa fa-facebook contactIcon" style="font-size:1.2rem"></i>
+                                </a>
+                                <span>
+                                    <a class="sr-only" href="https://www.facebook.com/junocollegeoftech/" target="_blank" rel="noopener"
+                                        tabindex="-1">Facebook</a>
+                                </span>
+                            </div>
+                            <div class="twitterIcon contactIconContainer">
+                                <a href="https://twitter.com/junocollege" target="_blank" rel="noopener" aria-hidden="true">
+                                    <i class="fa fa-twitter contactIcon" style="font-size:1.2rem"></i>
+                                </a>                                
+                                <span aria-hidden="true">
+                                    <a class="sr-only" href="https://twitter.com/junocollege" target="_blank" rel="noopener" tabindex="-1">Twitter</a>
+                                </span>
+                            </div>
+                            <div class="linkedinIcon contactIconContainer">
+                                <a href="https://www.linkedin.com/school/junocollege/" target="_blank" rel="noopener" aria-hidden="true">
+                                    <i class="fa fa-linkedin contactIcon" style="font-size:1.2rem"></i>
+                                </a>  
+                                <span aria-hidden="true">
+                                    <a class="sr-only" href="https://www.linkedin.com/school/junocollege/" target="_blank" rel="noopener"
+                                        tabindex="-1">LinkedIn</a>
+                                </span>
+                            </div>
+                            <div class="instagramIcon contactIconContainer">
+                                <a href="https://www.instagram.com/junocollege/" target="_blank" rel="noopener" aria-hidden="true">
+                                    <i class="fa fa-instagram contactIcon" style="font-size:1.2rem"></i>
+                                </a>
+                                <span aria-hidden="true">
+                                    <a class="sr-only" href="https://www.instagram.com/junocollege/" target="_blank" rel="noopener"
+                                        tabindex="-1">Instagram</a>
+                                </span>
+                            </div>
+                        </div>
+                        <address class="contactEmail">info@email.com</address>
                         <address>123 - 456 - 890</address>
                         <address>123 Queen Street West, Unit 10 <span>Toronto, Ontario</span><span>M5V2D5</span></address>
                     </div>

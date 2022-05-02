@@ -31,3 +31,50 @@
         }
     }
 }
+
+//main section
+
+.contactOverall {
+    padding: 100px 0;
+    background-color: $whiteShade;
+
+    .contactFlex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contactInformation {
+        flex-basis: calc((100% / 3) - 3%);
+        background-color: white;
+        height: 50%;
+        padding: 30px;
+        margin-bottom: 20px;
+
+        .socialMediaBar {
+            display: flex;
+        }
+
+        .contactIconContainer {
+            margin-right: 30px;
+            padding: 10px 0;
+
+            .contactIcon {
+                color: $tertiary;
+            }
+        }
+
+        .contactEmail {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    .blogForm {
+        flex-basis: calc((100% /3) * 2)
+    }
+}
