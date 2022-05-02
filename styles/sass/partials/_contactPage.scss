@@ -1,5 +1,6 @@
-.topNav {
-    padding: 20px;
+// navigation
+.contactNav {
+    padding: 20px 0;
     background-color: $tertiary;
 
     ul {
@@ -12,9 +13,26 @@
             text-transform: uppercase;
             font-weight: 700;
 
-            &:nth-child(1) {
+            &:nth-child(5) {
                 color: $whiteShade;
             }
         }
+    }
+}
+
+.contactBody {
+    
+    img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .wrapper {
+        position: relative;
+
+        h1 {
+            position: absolute;
+        }
+
     }
 }

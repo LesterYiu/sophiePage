@@ -141,43 +141,5 @@
     // form sub-section 
     .blogForm {
         margin-top: 40px;
-
-        .formFlex {
-            display: flex;
-            flex-direction: column;
-        
-            .personalDetails {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 2%;
-        
-                input {
-                    flex-basis: 49%;
-                    border: none;
-                    padding: 20px 30px;
-
-                    &::placeholder {
-                        color: $quaternary;
-                        opacity: 1;
-                        font-family: inherit;
-                        font-style: italic;
-                    }
-                }
-            }
-
-            textarea {
-                border: none;
-                resize: none;
-                padding: 20px 30px;
-                margin-bottom: 2%;
-
-                &::placeholder {
-                    color: $quaternary;
-                    opacity: 1;
-                    font-family: inherit;
-                    font-style: italic;
-                }
-            }
-        }
     }
 }

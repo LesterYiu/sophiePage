@@ -373,7 +373,8 @@ a {
 }
 
 .topNav {
-  padding-top: 20px;
+  padding: 20px;
+  background-color: #F6A823;
 }
 .topNav ul {
   display: -webkit-box;
@@ -628,6 +629,97 @@ footer p {
   text-align: center;
 }
 
+.blogForm .formFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.blogForm .formFlex .personalDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2%;
+}
+.blogForm .formFlex .personalDetails input {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  border: none;
+  padding: 20px 30px;
+}
+.blogForm .formFlex .personalDetails input::-webkit-input-placeholder {
+  color: #4F4F4F;
+  opacity: 1;
+  font-family: inherit;
+  font-style: italic;
+}
+.blogForm .formFlex .personalDetails input::-moz-placeholder {
+  color: #4F4F4F;
+  opacity: 1;
+  font-family: inherit;
+  font-style: italic;
+}
+.blogForm .formFlex .personalDetails input:-ms-input-placeholder {
+  color: #4F4F4F;
+  opacity: 1;
+  font-family: inherit;
+  font-style: italic;
+}
+.blogForm .formFlex .personalDetails input::-ms-input-placeholder {
+  color: #4F4F4F;
+  opacity: 1;
+  font-family: inherit;
+  font-style: italic;
+}
+.blogForm .formFlex .personalDetails input::placeholder {
+  color: #4F4F4F;
+  opacity: 1;
+  font-family: inherit;
+  font-style: italic;
+}
+.blogForm .formFlex textarea {
+  border: none;
+  resize: none;
+  padding: 20px 30px;
+  margin-bottom: 2%;
+}
+.blogForm .formFlex textarea::-webkit-input-placeholder {
+  color: #4F4F4F;
+  opacity: 1;
+  font-family: inherit;
+  font-style: italic;
+}
+.blogForm .formFlex textarea::-moz-placeholder {
+  color: #4F4F4F;
+  opacity: 1;
+  font-family: inherit;
+  font-style: italic;
+}
+.blogForm .formFlex textarea:-ms-input-placeholder {
+  color: #4F4F4F;
+  opacity: 1;
+  font-family: inherit;
+  font-style: italic;
+}
+.blogForm .formFlex textarea::-ms-input-placeholder {
+  color: #4F4F4F;
+  opacity: 1;
+  font-family: inherit;
+  font-style: italic;
+}
+.blogForm .formFlex textarea::placeholder {
+  color: #4F4F4F;
+  opacity: 1;
+  font-family: inherit;
+  font-style: italic;
+}
+
 .blogPage {
   background-color: #F0EFED;
 }
@@ -751,93 +843,39 @@ footer p {
 .blogFlex .blogForm {
   margin-top: 40px;
 }
-.blogFlex .blogForm .formFlex {
+
+.contactNav {
+  padding: 20px 0;
+  background-color: #F6A823;
+}
+.contactNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.blogFlex .blogForm .formFlex .personalDetails {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 2%;
+.contactNav ul li {
+  margin: 0 30px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
-.blogFlex .blogForm .formFlex .personalDetails input {
-  -ms-flex-preferred-size: 49%;
-      flex-basis: 49%;
-  border: none;
-  padding: 20px 30px;
+.contactNav ul li:nth-child(5) {
+  color: #F0EFED;
 }
-.blogFlex .blogForm .formFlex .personalDetails input::-webkit-input-placeholder {
-  color: #4F4F4F;
-  opacity: 1;
-  font-family: inherit;
-  font-style: italic;
+
+.contactBody img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
-.blogFlex .blogForm .formFlex .personalDetails input::-moz-placeholder {
-  color: #4F4F4F;
-  opacity: 1;
-  font-family: inherit;
-  font-style: italic;
+.contactBody .wrapper {
+  position: relative;
 }
-.blogFlex .blogForm .formFlex .personalDetails input:-ms-input-placeholder {
-  color: #4F4F4F;
-  opacity: 1;
-  font-family: inherit;
-  font-style: italic;
-}
-.blogFlex .blogForm .formFlex .personalDetails input::-ms-input-placeholder {
-  color: #4F4F4F;
-  opacity: 1;
-  font-family: inherit;
-  font-style: italic;
-}
-.blogFlex .blogForm .formFlex .personalDetails input::placeholder {
-  color: #4F4F4F;
-  opacity: 1;
-  font-family: inherit;
-  font-style: italic;
-}
-.blogFlex .blogForm .formFlex textarea {
-  border: none;
-  resize: none;
-  padding: 20px 30px;
-  margin-bottom: 2%;
-}
-.blogFlex .blogForm .formFlex textarea::-webkit-input-placeholder {
-  color: #4F4F4F;
-  opacity: 1;
-  font-family: inherit;
-  font-style: italic;
-}
-.blogFlex .blogForm .formFlex textarea::-moz-placeholder {
-  color: #4F4F4F;
-  opacity: 1;
-  font-family: inherit;
-  font-style: italic;
-}
-.blogFlex .blogForm .formFlex textarea:-ms-input-placeholder {
-  color: #4F4F4F;
-  opacity: 1;
-  font-family: inherit;
-  font-style: italic;
-}
-.blogFlex .blogForm .formFlex textarea::-ms-input-placeholder {
-  color: #4F4F4F;
-  opacity: 1;
-  font-family: inherit;
-  font-style: italic;
-}
-.blogFlex .blogForm .formFlex textarea::placeholder {
-  color: #4F4F4F;
-  opacity: 1;
-  font-family: inherit;
-  font-style: italic;
+.contactBody .wrapper h1 {
+  position: absolute;
 }
