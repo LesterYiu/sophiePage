@@ -17,6 +17,12 @@
             margin: 0 30px;
             text-transform: uppercase;
             font-weight: 700;
+
+            &:focus-within {
+                color: white;
+                transition-property: all;
+                transition-duration: 0.8s;
+            }
         }
     }
 }

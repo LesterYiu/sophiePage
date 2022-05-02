@@ -15,6 +15,12 @@ button {
     background-color: $quinary;
     padding: 10px 25px;
     letter-spacing: 1px;
+
+    &:focus-within {
+        color: white;
+        transition-property: all;
+        transition-duration: 0.8s;
+    }
 }
 
 a {
