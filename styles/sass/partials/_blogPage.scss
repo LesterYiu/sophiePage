@@ -1,6 +1,8 @@
+// overall
 .blogPage {
     background-color: $whiteShade;
-
+    
+    // navigation
     .blogNav {
         padding: 20px 0;
         background-color: $tertiary;
@@ -21,7 +23,7 @@
             }
         }
     }
-
+    // header
     header {
 
         .wrapper {
@@ -55,11 +57,13 @@
     }
 }
 
+// main section
 .blogFlex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    // blog information and blog content sub-section
     .blogInformation {
         flex-basis: calc(100% / 3);
 
@@ -69,6 +73,28 @@
             text-transform: uppercase;
             font-weight: 700;
         }
+
+        .recentPosts {
+
+            li {
+                position: relative;
+                padding-left: 20px;
+
+                    &::before {
+                        content: "";
+                        display: inline-block;
+                        background-color: $tertiary;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        position: absolute;
+                        top: 45%;
+                        left: 0;
+                    }
+            }
+
+        }
+
     }
 
     .blogContent {
@@ -88,9 +114,70 @@
         }
     }
 
+    // comment sub-section
     .blogComments {
         border-bottom: 6px solid $tertiary;
+    
+        .comment {
+            display: flex;
+
+            .commentImageContainer {
+                width: calc(100% / 6);
+            }
+
+            .commentText {
+                width: calc((100% / 6) * 5)
+            }
+        }
+
+        .commentPublisher {
+            color: #25595E;
+            font-weight: bold;
+            font-style: italic;
+            margin: 0;
+        }
     }
 
-    
+    // form sub-section 
+    .blogForm {
+        margin-top: 40px;
+
+        .formFlex {
+            display: flex;
+            flex-direction: column;
+        
+            .personalDetails {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 2%;
+        
+                input {
+                    flex-basis: 49%;
+                    border: none;
+                    padding: 20px 30px;
+
+                    &::placeholder {
+                        color: $quaternary;
+                        opacity: 1;
+                        font-family: inherit;
+                        font-style: italic;
+                    }
+                }
+            }
+
+            textarea {
+                border: none;
+                resize: none;
+                padding: 20px 30px;
+                margin-bottom: 2%;
+
+                &::placeholder {
+                    color: $quaternary;
+                    opacity: 1;
+                    font-family: inherit;
+                    font-style: italic;
+                }
+            }
+        }
+    }
 }

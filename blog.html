@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body class="blogPage">
+
+    <a class="skipMainContent" href="#aboutSophie">Skip to content</a>
     <nav class="blogNav" role="navigation">
         <ul>
             <li>
@@ -36,13 +38,13 @@
     </header>
 
     <main role="main">
-        <section>
+        <section id="aboutSophie">
             <div class="wrapper">
                 <div class="blogFlex">
                     <div class="blogInformation">
                         <div class="blogAuthor blogSection">
                             <div class="authorImageContainer">
-                                <img src="./assets/blog-image-2.jpg" alt="">
+                                <img src="./assets/blog-image-2.jpg" alt="the artist known as Sophie smiling at the camera">
                             </div>
                             <p class="blogHeading">about sophie</p>
                             <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="#">Find out more.</a>
@@ -79,28 +81,34 @@
                                 <div class="commentImageContainer">
                                     <img src="./assets/blog-image-3.jpg" alt="">
                                 </div>
-                                <p class="commentPublisher"><time datetime="2018-10-9">Tuesday October 9th, 2018</time> by Jeremy</p>
-                                <p>Fusce vehicula dolor arcu, sit amet, blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                                <div class="commentText">
+                                    <p class="commentPublisher"><time datetime="2018-10-9">Tuesday October 9th, 2018</time> by Jeremy</p>
+                                    <p>Fusce vehicula dolor arcu, sit amet, blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                                </div>
                             </div>
                             <div class="comment blogSection">
                                 <div class="commentImageContainer">
                                     <img src="./assets/blog-image-4.jpg" alt="">
                                 </div>
-                                <p class="commentPublisher"><time datetime="2018-10-10">Tuesday October 10th, 2018</time> by Julia</p>
-                                <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euinsmod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                                <div class="commentText">
+                                    <p class="commentPublisher"><time datetime="2018-10-10">Tuesday October 10th, 2018</time> by Julia</p>
+                                    <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Doneceuinsmod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="blogForm blogSection">
+                        <div class="blogForm">
                             <form action="#">
-                                <label for="name" class="sr-only">Name</label>
-                                <input type="text" id="name" placeholder="Name">
-
-                                <label for="emailAddress" class="sr-only">Email Address</label>
-                                <input type="email" id="emailAddress" placeholder="Email">
-
-                                <textarea name="userComment" id="userCommentary" rows="10"></textarea>
-
-                                <button type="submit">post comment</button>
+                                <div class="formFlex">
+                                    <div class="personalDetails">
+                                        <label for="name" class="sr-only">Name</label>
+                                        <input type="text" id="name" placeholder="Name">
+                                        
+                                        <label for="emailAddress" class="sr-only">Email Address</label>
+                                        <input type="email" id="emailAddress" placeholder="Email">
+                                    </div>
+                                    <textarea name="userComment" id="userCommentary" rows="10" placeholder="Comment"></textarea>
+                                    <button type="submit">post comment</button>
+                                </div>
                             </form>
                         </div>
                     </div>
