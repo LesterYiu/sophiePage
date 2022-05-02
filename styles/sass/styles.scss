@@ -1,9 +1,12 @@
+// set up and base styles for all pages
 @import "./partials/setup";
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap');
 @import "./partials/variables";
 @import "./partials/typography";
 @import "./partials/base";
 @import "./partials/skipContent";
+
+// home page
 @import "./partials/topNav";
 @import "./partials/header";
 @import "./partials/aboutSophieSection";
@@ -12,5 +15,10 @@
 @import "./partials/decorativeSection";
 @import "./partials/sophieJourney";
 @import "./partials/gallerySection";
-@import "./partials/blogPage";
+
+// footer for all page
+
 @import "./partials/footer";
+
+// blog page
+@import "./partials/blogPage";

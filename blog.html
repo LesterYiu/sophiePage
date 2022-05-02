@@ -30,7 +30,9 @@
 
     <header role="banner">
         <img src="./assets/blog-image-1.jpg" alt="">
-        <h1>blog</h1>
+        <div class="wrapper">
+            <h1>blog</h1>
+        </div>
     </header>
 
     <main role="main">
@@ -43,8 +45,7 @@
                                 <img src="./assets/blog-image-2.jpg" alt="">
                             </div>
                             <p class="blogHeading">about sophie</p>
-                            <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="#">Find out
-                                    more.</a>
+                            <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="#">Find out more.</a>
                             </p>
                         </div>
                         <div class="recentPosts blogSection">
@@ -73,11 +74,34 @@
 
                             <p>Lorem ipsum dolor sit amet, consectetus adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc, Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales argue mollis ut. Mauris venanatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est argue tristique risus.</p>
                         </div>
-                        <div class="blogComments blogSection">
-                    
+                        <div class="blogComments">
+                            <div class="comment blogSection">
+                                <div class="commentImageContainer">
+                                    <img src="./assets/blog-image-3.jpg" alt="">
+                                </div>
+                                <p class="commentPublisher"><time datetime="2018-10-9">Tuesday October 9th, 2018</time> by Jeremy</p>
+                                <p>Fusce vehicula dolor arcu, sit amet, blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                            </div>
+                            <div class="comment blogSection">
+                                <div class="commentImageContainer">
+                                    <img src="./assets/blog-image-4.jpg" alt="">
+                                </div>
+                                <p class="commentPublisher"><time datetime="2018-10-10">Tuesday October 10th, 2018</time> by Julia</p>
+                                <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euinsmod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu.</p>
+                            </div>
                         </div>
                         <div class="blogForm blogSection">
-                    
+                            <form action="#">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" id="name" placeholder="Name">
+
+                                <label for="emailAddress" class="sr-only">Email Address</label>
+                                <input type="email" id="emailAddress" placeholder="Email">
+
+                                <textarea name="userComment" id="userCommentary" rows="10"></textarea>
+
+                                <button type="submit">post comment</button>
+                            </form>
                         </div>
                     </div>
                 </div>

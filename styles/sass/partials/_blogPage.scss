@@ -23,12 +23,15 @@
     }
 
     header {
-        position: relative;
+
+        .wrapper {
+            position: relative;
+        }
 
         h1 {
             position: absolute;
             bottom: -39px;
-            left: 105px;
+            left: 0px;
         }
 
         img {
@@ -39,6 +42,16 @@
 
     section {
         padding: 100px 0;
+    }
+
+    .blogSection {
+        background-color: white;
+        padding: 40px;
+        margin-top: 40px;
+    }
+    
+    .recentPosts .blogHeading {
+        margin-top: 0px;
     }
 }
 
@@ -60,9 +73,13 @@
 
     .blogContent {
         flex-basis: calc(((100% / 3) * 2) - 4%);
+            
+        .blogPost {
+            border-bottom: 6px solid $tertiary;    
 
-        .blogPublisher {
-            font-style:italic;
+            .blogPublisher {
+                font-style: italic;
+            }
 
             .blogUsername {
                 color: #25595E;
@@ -71,16 +88,9 @@
         }
     }
 
-    .blogSection {
-        background-color: white;
-        padding: 40px;
+    .blogComments {
+        border-bottom: 6px solid $tertiary;
     }
 
-    .recentPosts {
-        margin-top: 40px;
-
-        .blogHeading {
-            margin-top: 0px;
-        }
-    }
+    
 }
