@@ -6,8 +6,11 @@
 @import "./partials/base";
 @import "./partials/skipContent";
 
-// home page
+// navigation & footer for all pages
 @import "./partials/topNav";
+@import "./partials/footer";
+
+// home page
 @import "./partials/header";
 @import "./partials/aboutSophieSection";
 @import "./partials/sophieHistorySection";
@@ -15,10 +18,6 @@
 @import "./partials/decorativeSection";
 @import "./partials/sophieJourney";
 @import "./partials/gallerySection";
-
-// footer for all pages
-
-@import "./partials/footer";
 
 // form for all pages
 

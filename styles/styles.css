@@ -291,6 +291,13 @@ h5 {
   letter-spacing: 1px;
 }
 
+address {
+  font-style: normal;
+  font-size: 1rem;
+  color: black;
+  font-family: inherit;
+}
+
 button {
   font-size: 1rem;
   color: black;
@@ -372,6 +379,10 @@ a {
   left: 0;
 }
 
+.homeBody li:nth-child(1) {
+  color: #F0EFED;
+}
+
 .topNav {
   padding: 20px;
   background-color: #F6A823;
@@ -392,8 +403,19 @@ a {
   text-transform: uppercase;
   font-weight: 700;
 }
-.topNav ul li:nth-child(1) {
+
+.navigationBar {
+  background-color: #F6A823;
+}
+
+footer {
+  background-color: black;
+}
+footer p {
+  margin: 0;
   color: #F0EFED;
+  padding: 10px 0;
+  text-align: center;
 }
 
 .headerHome {
@@ -619,16 +641,6 @@ a {
       flex-basis: 31.5%;
 }
 
-footer {
-  background-color: black;
-}
-footer p {
-  margin: 0;
-  color: #F0EFED;
-  padding: 10px 0;
-  text-align: center;
-}
-
 .blogForm .formFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -720,54 +732,38 @@ footer p {
   font-style: italic;
 }
 
-.blogPage {
+.blogBody {
   background-color: #F0EFED;
 }
-.blogPage .blogNav {
+.blogBody .topNav {
   padding: 20px 0;
   background-color: #F6A823;
 }
-.blogPage .blogNav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.blogPage .blogNav ul li {
-  margin: 0 30px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.blogPage .blogNav ul li:nth-child(4) {
+.blogBody .topNav li:nth-child(4) {
   color: #F0EFED;
 }
-.blogPage header .wrapper {
+.blogBody header .wrapper {
   position: relative;
 }
-.blogPage header h1 {
+.blogBody header h1 {
   position: absolute;
   bottom: -39px;
   left: 0px;
 }
-.blogPage header img {
+.blogBody header img {
   -o-object-fit: contain;
      object-fit: contain;
   width: 100%;
 }
-.blogPage section {
+.blogBody section {
   padding: 100px 0;
 }
-.blogPage .blogSection {
+.blogBody .blogSection {
   background-color: white;
   padding: 40px;
   margin-top: 40px;
 }
-.blogPage .recentPosts .blogHeading {
+.blogBody .recentPosts .blogHeading {
   margin-top: 0px;
 }
 
@@ -844,38 +840,23 @@ footer p {
   margin-top: 40px;
 }
 
-.contactNav {
+.contactBody .topNav {
   padding: 20px 0;
   background-color: #F6A823;
 }
-.contactNav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.contactNav ul li {
-  margin: 0 30px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.contactNav ul li:nth-child(5) {
+.contactBody .topNav li:nth-child(5) {
   color: #F0EFED;
 }
-
-.contactBody img {
+.contactBody header img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-.contactBody .wrapper {
+.contactBody header .wrapper {
   position: relative;
 }
-.contactBody .wrapper h1 {
+.contactBody header .wrapper h1 {
   position: absolute;
+  bottom: -40px;
+  left: 0;
 }
