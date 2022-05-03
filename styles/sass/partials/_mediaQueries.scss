@@ -40,11 +40,45 @@
                     rotate: 380deg;
                 }
             }
+
+            .headerImage {
+                
+                img {
+                    box-shadow: 10px 10px 0px 2px white;
+                }
+            }
         }
     }
 }
 
 @media (max-width: 940px) {
+
+    .topNav {
+        padding: 40px 0;
+
+        ul {
+            display: none;
+        }
+
+        .smallDevicesNav {
+            display: block;
+            width: 100%;
+            position: relative;
+
+            .logo {
+                text-align: center;
+            }
+
+            button {
+                position: absolute;
+                right: 0;
+                top: -6px;
+                background-color: $tertiary;
+                padding: 0;
+                font-size: 40px;
+            }
+        }
+    }
 
     .headerHome {
 
@@ -67,5 +101,9 @@
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
+    }
+
+    body {
+        animation: none;
     }
 }

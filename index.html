@@ -31,6 +31,14 @@
                         <a href="./contact.html">contact</a>
                     </li>
                 </ul>
+                <div class="smallDevicesNav">
+                    <div class="logo">
+                        <a href="./index.html">sophie<span class="sr-only">Home Page</span></a>
+                    </div>
+                    <button>
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
             </nav>
             <div class="headerContent">
                 <div class="headerText">
@@ -90,9 +98,12 @@
                 <div class="bottomNavFlex">
                     <div class="photosNav bottomNavSection">
                         <div class="botNavContainer">
-                            <a href="#" class="iconContainer">
+                            <a href="#gallery" class="iconContainer" aria-hidden="true">
                                 <i class="fa-solid fa-image bottomIcons"></i>
                             </a>
+                            <span class="sr-only">
+                                <a href="#gallery" tabindex="-1">Check out photos posted by SOPHIE</a>
+                            </span>
                         </div>
                         <div class="bottomNavText">
                             <h3>photos</h3>
@@ -102,9 +113,12 @@
                     </div>
                     <div class="aboutNav bottomNavSection">
                         <div class="botNavContainer">
-                            <a href="#" class="iconContainer">
+                            <a href="#aboutSophie" class="iconContainer" aria-hidden="true">
                                 <i class="fa-solid fa-user bottomIcons"></i>
                             </a>
+                            <span class="bottomNavText sr-only">
+                                <a href="#aboutSophie" tabindex="-1">Learn more about Sophie</a>
+                            </span>
                         </div>
                         <div class="bottomNavText">
                             <h3>about</h3>
@@ -114,9 +128,12 @@
                     </div>
                     <div class="blogNav bottomNavSection">
                         <div class="botNavContainer">
-                            <a href="#" class="iconContainer">
+                            <a href="./blog.html" class="iconContainer" aria-hidden="true">
                                 <i class="fa-solid fa-display bottomIcons"></i>
                             </a>
+                            <span class="sr-only">
+                                <a href="./blog.html" tabindex="-1">Visit Sophie's blog</a>
+                            </span>
                         </div>
                         <div class="bottomNavText">
                             <h3>blog</h3>
@@ -126,9 +143,12 @@
                     </div>
                     <div class="getInTouchNav bottomNavSection">
                         <div class="botNavContainer">
-                            <a href="#" class="iconContainer">
+                            <a href="./contact.html" class="iconContainer" aria-hidden="true">
                                 <i class="fa-solid fa-phone-flip bottomIcons"></i>
                             </a>
+                            <span class="sr-only">
+                                <a href="./contact.html" tabindex="-1">Contact Sophie</a>
+                            </span>
                         </div>
                         <div class="bottomNavText">
                             <h3>get in touch</h3>
@@ -141,7 +161,7 @@
         </nav>
 
         <section class="decorativeSection">
-            <img src="./assets/home-image-4.jpg" alt="">
+            <img src="./assets/home-image-4.jpg" alt="" aria-hidden="true">
         </section>
 
         <section class="sophieJourney" id="mainContent">
@@ -163,17 +183,17 @@
             </div>
         </section>
 
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="wrapper">
                 <div class="galleryFlex">
                     <div class="galleryItem">
-                        <img src="./assets/home-image-6.jpg" alt="">
+                        <img src="./assets/home-image-6.jpg" alt="a bicycle parked in Venice. Used in the set for Sophie's latest music video.">
                     </div>
                     <div class="galleryItem">
-                        <img src="./assets/home-image-7.jpg" alt="">
+                        <img src="./assets/home-image-7.jpg" alt="a building in Venice, Italy where Sophie stayed for during her song writing process of her newest album.">
                     </div>
                     <div class="galleryItem">
-                        <img src="./assets/home-image-8.jpg" alt="">
+                        <img src="./assets/home-image-8.jpg" alt="a umbrella prop used in the latest music video by Sophie.">
                     </div>
                 </div>
             </div>
