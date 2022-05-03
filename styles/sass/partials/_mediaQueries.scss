@@ -1,6 +1,48 @@
 // home page media queries
 
+@media (max-width: 1240px) {
+    .headerHome {
+        .headerContent {
+        
+            h1 {
+                font-size: 5.5rem;
+            }
+        
+            .headerImage {
+                height: auto;
+        
+                img {
+                    position: initial;
+                }
+            }
+        }
+    }
+}
 
+@media (max-width: 1060px) {
+    .headerHome {
+
+        .headerContent {
+            min-height: 50vh;
+
+            h1 {
+                padding-left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .headerTitleImage {
+
+                img {
+                    top: -64px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    rotate: 380deg;
+                }
+            }
+        }
+    }
+}
 
 // reduced motion media query
 

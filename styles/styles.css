@@ -397,7 +397,7 @@ a {
 }
 
 .topNav {
-  padding: 20px;
+  padding: 20px 0;
   background-color: #F6A823;
 }
 .topNav ul {
@@ -452,9 +452,12 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .headerHome .headerText {
-  width: 60%;
+  width: 58%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,7 +488,7 @@ footer p {
   top: -90px;
 }
 .headerHome .headerImage {
-  width: 40%;
+  width: 38%;
   height: 20vh;
   position: relative;
 }
@@ -512,6 +515,7 @@ footer p {
   text-align: left;
   padding-left: 100px;
   width: 50%;
+  margin-bottom: 20px;
 }
 .sophieHistory .sophieTravel .travelledImage {
   margin-left: 50px;
@@ -940,6 +944,34 @@ footer p {
   bottom: 0;
 }
 
+@media (max-width: 1240px) {
+  .headerHome .headerContent h1 {
+    font-size: 5.5rem;
+  }
+  .headerHome .headerContent .headerImage {
+    height: auto;
+  }
+  .headerHome .headerContent .headerImage img {
+    position: initial;
+  }
+}
+@media (max-width: 1060px) {
+  .headerHome .headerContent {
+    min-height: 50vh;
+  }
+  .headerHome .headerContent h1 {
+    padding-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .headerHome .headerContent .headerTitleImage img {
+    top: -64px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    rotate: 380deg;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
