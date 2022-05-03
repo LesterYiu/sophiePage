@@ -44,6 +44,24 @@
     }
 }
 
+@media (max-width: 940px) {
+
+    .headerHome {
+
+        .headerContent {
+            flex-direction: column;
+        }
+
+        .headerText {
+            padding-top: 90px;
+
+            h1 {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
 // reduced motion media query
 
 @media (prefers-reduced-motion: reduce) {

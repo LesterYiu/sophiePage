@@ -972,6 +972,20 @@ footer p {
     rotate: 380deg;
   }
 }
+@media (max-width: 940px) {
+  .headerHome .headerContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerHome .headerText {
+    padding-top: 90px;
+  }
+  .headerHome .headerText h1 {
+    padding-bottom: 20px;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
