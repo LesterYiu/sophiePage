@@ -14,12 +14,12 @@
                 border: none;
                 padding: 20px 30px;
 
-                &::placeholder {
-                    color: $quaternary;
-                    opacity: 1;
-                    font-family: inherit;
-                    font-style: italic;
-                }
+                    &::placeholder {
+                        color: $quaternary;
+                        opacity: 1;
+                        font-family: inherit;
+                        font-style: italic;
+                    }
             }
         }
 

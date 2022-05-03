@@ -1,6 +1,8 @@
 // home page media queries
 
 @media (max-width: 1240px) {
+
+    // header
     .headerHome {
         .headerContent {
         
@@ -20,6 +22,8 @@
 }
 
 @media (max-width: 1060px) {
+
+    // header
     .headerHome {
 
         .headerContent {
@@ -53,6 +57,8 @@
 
 @media (max-width: 940px) {
 
+    // navigation
+
     .topNav {
         padding: 40px 0;
 
@@ -80,6 +86,7 @@
         }
     }
 
+    // header
     .headerHome {
 
         .headerContent {
@@ -93,6 +100,60 @@
                 padding-bottom: 20px;
             }
         }
+    }
+
+    // sophie history
+
+    .sophieHistory {
+
+        .sophieFavourite {
+
+            .favouriteImage {
+            
+                width: 100%;
+            
+                img {
+                    position: initial;
+                }
+            }
+
+            .favouriteText {
+                width: 100%;
+                padding: 0;
+                margin: 20px 0 60px 0;
+                text-align: center;
+            }
+        }
+        
+        .sophieTravel {
+
+            .travelledImage {
+                order: -1;
+                width: 100%;
+                margin-left: 0;
+
+                img {
+                    position: initial;
+                }
+            }
+
+            .travelledText {
+                width: 100%;
+                padding: 0;
+                margin: 20px 0 0 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .absoluteSenary,
+    .absoluteTertiary {
+        display: none;
+    }
+
+    .sophieFavourite,
+    .sophieTravel {
+        flex-direction: column;
     }
 }
 

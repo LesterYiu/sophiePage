@@ -13,18 +13,30 @@ img {
     max-width: 100%;
 }
 
-button {
+button,
+.readMore {
     cursor: pointer;
     border: none;
     background-color: $quinary;
     padding: 10px 25px;
     letter-spacing: 1px;
+    transition-property: all;
+    transition-duration: 0.8s;
 
-    &:focus-within {
+    &:focus-within,
+    &:hover {
         color: white;
-        transition-property: all;
-        transition-duration: 0.8s;
     }
+}
+
+.readMore {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: inherit;
 }
 
 a {

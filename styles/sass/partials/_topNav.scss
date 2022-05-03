@@ -27,6 +27,16 @@
         }
     }
 
+    .logo {
+        transition-property: all;
+        transition-duration: 0.5s;
+    
+        &:focus-within,
+        &:hover {
+            color: white;
+        }
+    }
+
     .smallDevicesNav {
         display: none;
     }

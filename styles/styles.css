@@ -356,19 +356,32 @@ img {
   max-width: 100%;
 }
 
-button {
+button,
+.readMore {
   cursor: pointer;
   border: none;
   background-color: #25C8DB;
   padding: 10px 25px;
   letter-spacing: 1px;
-}
-button:focus-within {
-  color: white;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
+}
+button:focus-within, button:hover,
+.readMore:focus-within,
+.readMore:hover {
+  color: white;
+}
+
+.readMore {
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: inherit;
 }
 
 a {
@@ -447,6 +460,15 @@ body {
           transition-duration: 0.5s;
 }
 .topNav ul li:focus-within, .topNav ul li:hover {
+  color: white;
+}
+.topNav .logo {
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+.topNav .logo:focus-within, .topNav .logo:hover {
   color: white;
 }
 .topNav .smallDevicesNav {
@@ -556,7 +578,7 @@ footer p {
 .sophieHistory .sophieTravel .travelledText {
   text-align: right;
   width: 50%;
-  margin-right: 145px;
+  padding-right: 140px;
 }
 .sophieHistory .absoluteSenary {
   position: absolute;
@@ -1040,6 +1062,48 @@ footer p {
   }
   .headerHome .headerText h1 {
     padding-bottom: 20px;
+  }
+
+  .sophieHistory .sophieFavourite .favouriteImage {
+    width: 100%;
+  }
+  .sophieHistory .sophieFavourite .favouriteImage img {
+    position: initial;
+  }
+  .sophieHistory .sophieFavourite .favouriteText {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0 60px 0;
+    text-align: center;
+  }
+  .sophieHistory .sophieTravel .travelledImage {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+    margin-left: 0;
+  }
+  .sophieHistory .sophieTravel .travelledImage img {
+    position: initial;
+  }
+  .sophieHistory .sophieTravel .travelledText {
+    width: 100%;
+    padding: 0;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .absoluteSenary,
+.absoluteTertiary {
+    display: none;
+  }
+
+  .sophieFavourite,
+.sophieTravel {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media (prefers-reduced-motion: reduce) {
