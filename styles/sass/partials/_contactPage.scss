@@ -1,5 +1,8 @@
 .contactBody {
-    
+    position: relative;
+    min-height: 100vh;
+    background-color: $whiteShade;
+
     // navigation
     .topNav {
         padding: 20px 0;
@@ -77,4 +80,13 @@
     .blogForm {
         flex-basis: calc((100% /3) * 2)
     }
+}
+
+// footer
+
+.contactBody footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

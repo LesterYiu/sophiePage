@@ -115,7 +115,8 @@
             }
 
             .commentText {
-                width: calc((100% / 6) * 5)
+                width: calc((100% / 6) * 5);
+                margin-left: 10px;
             }
         }
 
