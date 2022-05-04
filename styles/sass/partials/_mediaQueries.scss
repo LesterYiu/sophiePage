@@ -94,12 +94,23 @@
                 img {
                     top: -94px;
                 }
-            
+            }
+
+            .headerImage {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    box-shadow: none;
+                    border: 4px white solid;
+                }
             }
         }
 
         .headerText {
             padding-top: 90px;
+            width: 100%;
 
             h1 {
                 font-size: 4.5rem;
@@ -190,6 +201,21 @@
         }
     }
 
+    // sophie journey section
+
+    .journeyText {
+        text-align: center;
+
+        a {
+            width: 100%;
+        }
+    }
+
+    .sophieJourney img {
+        height: 100%;
+        object-fit: cover;
+    }
+
     // gallery
 
     .galleryFlex {
@@ -204,6 +230,39 @@
             img {
                 border-radius: 15px;
             }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    
+    // overall
+
+    .homeBody .readMore {
+        min-width: 60%;
+    }
+
+    // sophie journey
+
+    .sophieJourney {
+
+        .sophieJourneyFlex {
+            flex-direction: column;
+            align-items: center;
+        
+            .journeyImageContainer {
+        
+                img {
+                    box-shadow: none;
+                    border: 4px solid $tertiary;
+                }
+        
+            }
+        
+        }
+
+        h3 {
+            margin-top: 30px;
         }
     }
 }
