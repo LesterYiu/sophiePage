@@ -71,10 +71,6 @@
             width: 100%;
             position: relative;
 
-            .logo {
-                text-align: center;
-            }
-
             button {
                 position: absolute;
                 right: 0;
@@ -91,14 +87,36 @@
 
         .headerContent {
             flex-direction: column;
+            padding-top: 0;
+
+            .headerTitleImage {
+            
+                img {
+                    top: -94px;
+                }
+            
+            }
         }
 
         .headerText {
             padding-top: 90px;
 
             h1 {
-                padding-bottom: 20px;
+                font-size: 4.5rem;
+                position: relative;
+                top: -28px;
             }
+            
+        }
+    }
+
+    // about sophie
+
+    .aboutSophieFlex {
+        text-align: center;
+
+        p {
+            margin: 40px 0;
         }
     }
 
@@ -106,11 +124,16 @@
 
     .sophieHistory {
 
+        p {
+            margin: 40px 0;
+        }
+
         .sophieFavourite {
 
             .favouriteImage {
             
                 width: 100%;
+                box-shadow: -12px -12px 0 2px $senary;
             
                 img {
                     position: initial;
@@ -131,6 +154,7 @@
                 order: -1;
                 width: 100%;
                 margin-left: 0;
+                box-shadow: 12px 12px 0 2px $tertiary;
 
                 img {
                     position: initial;
@@ -154,6 +178,33 @@
     .sophieFavourite,
     .sophieTravel {
         flex-direction: column;
+    }
+
+    // bottomNav
+
+    .bottomNavFlex {
+        flex-direction: column;
+
+        .marginFixNav {
+            margin-left: 38px;
+        }
+    }
+
+    // gallery
+
+    .galleryFlex {
+        flex-direction: column;
+        justify-items: center;
+
+        .galleryItem {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+
+            img {
+                border-radius: 15px;
+            }
+        }
     }
 }
 

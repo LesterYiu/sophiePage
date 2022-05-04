@@ -1039,9 +1039,6 @@ footer p {
     width: 100%;
     position: relative;
   }
-  .topNav .smallDevicesNav .logo {
-    text-align: center;
-  }
   .topNav .smallDevicesNav button {
     position: absolute;
     right: 0;
@@ -1056,16 +1053,34 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 0;
+  }
+  .headerHome .headerContent .headerTitleImage img {
+    top: -94px;
   }
   .headerHome .headerText {
     padding-top: 90px;
   }
   .headerHome .headerText h1 {
-    padding-bottom: 20px;
+    font-size: 4.5rem;
+    position: relative;
+    top: -28px;
   }
 
+  .aboutSophieFlex {
+    text-align: center;
+  }
+  .aboutSophieFlex p {
+    margin: 40px 0;
+  }
+
+  .sophieHistory p {
+    margin: 40px 0;
+  }
   .sophieHistory .sophieFavourite .favouriteImage {
     width: 100%;
+    -webkit-box-shadow: -12px -12px 0 2px #A82706;
+            box-shadow: -12px -12px 0 2px #A82706;
   }
   .sophieHistory .sophieFavourite .favouriteImage img {
     position: initial;
@@ -1082,6 +1097,8 @@ footer p {
             order: -1;
     width: 100%;
     margin-left: 0;
+    -webkit-box-shadow: 12px 12px 0 2px #F6A823;
+            box-shadow: 12px 12px 0 2px #F6A823;
   }
   .sophieHistory .sophieTravel .travelledImage img {
     position: initial;
@@ -1104,6 +1121,36 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .bottomNavFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bottomNavFlex .marginFixNav {
+    margin-left: 38px;
+  }
+
+  .galleryFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+  }
+  .galleryFlex .galleryItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px 0;
+  }
+  .galleryFlex .galleryItem img {
+    border-radius: 15px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
