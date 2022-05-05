@@ -1063,10 +1063,20 @@ footer p {
     background-color: #F6A823;
     padding: 0;
     font-size: 40px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
   .homeBody .topNav {
     padding-top: 20px;
+    position: relative;
+  }
+  .homeBody .topNav .smallDevicesNav {
+    position: static;
+  }
+  .homeBody .topNav .smallDevicesNav button {
+    top: 59%;
   }
 
   .headerHome .headerContent {
@@ -1304,9 +1314,6 @@ footer p {
 @media (max-width: 480px) {
   .topNav .smallDevicesNav button {
     right: 10px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
   }
 
   .headerHome .wrapper {
