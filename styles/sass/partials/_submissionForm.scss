@@ -8,9 +8,11 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 2%;
+            width: 100%;
 
             input {
                 flex-basis: 49%;
+                width: 49%;
                 border: none;
                 padding: 20px 30px;
 
@@ -19,6 +21,10 @@
                         opacity: 1;
                         font-family: inherit;
                         font-style: italic;
+                    }
+
+                    &[type="text"] {
+                        margin-right: 2%;
                     }
             }
         }

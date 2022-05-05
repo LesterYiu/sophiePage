@@ -2,7 +2,7 @@
 
 @media (max-width: 1240px) {
 
-    // header
+    // header (HOME)
     .headerHome {
         .headerContent {
         
@@ -23,7 +23,7 @@
 
 @media (max-width: 1060px) {
 
-    // header
+    // header (HOME)
     .headerHome {
 
         .headerContent {
@@ -57,7 +57,7 @@
 
 @media (max-width: 940px) {
 
-    // navigation
+    // top navigation (HOME)
 
     .topNav {
         padding: 40px 0;
@@ -82,7 +82,7 @@
         }
     }
 
-    // header
+    // header (HOME)
     .headerHome {
 
         .headerContent {
@@ -122,7 +122,7 @@
         }
     }
 
-    // about sophie
+    // about sophie (HOME)
 
     .aboutSophieFlex {
         text-align: center;
@@ -132,7 +132,7 @@
         }
     }
 
-    // sophie history
+    // sophie history (HOME)
 
     .sophieHistory {
 
@@ -192,7 +192,7 @@
         flex-direction: column;
     }
 
-    // bottomNav
+    // bottomNav (HOME)
 
     .bottomNavFlex {
         flex-direction: column;
@@ -202,7 +202,7 @@
         }
     }
 
-    // sophie journey section
+    // sophie journey section (HOME)
 
     .journeyText {
         text-align: center;
@@ -233,19 +233,19 @@
 
 @media (max-width:768px) {
     
-    // overall
+    // overall (HOME)
 
     .homeBody .readMore {
         min-width: 60%;
     }
 
-    // sophie travelled section
+    // sophie travelled section (HOME)
 
     .sophieHistory h3 {
         margin-top: 20px;
     }
 
-    // sophie journey
+    // sophie journey (HOME)
 
     .sophieJourney {
 
@@ -272,7 +272,7 @@
 
 @media (max-width: 480px) {
 
-    //top nav
+    //top nav (HOME)
 
     .topNav {
 
@@ -282,7 +282,7 @@
         }
     }
 
-    // header content
+    // header content (HOME)
 
     .headerHome {
 
@@ -303,13 +303,13 @@
         }
     }
 
-    // about sophie section
+    // about sophie section (HOME)
 
         .aboutSophie {
             padding: 75px 0;
         }
 
-    // bottom nav section
+    // bottom nav section (HOME)
 
     .bottomNav {
         padding-bottom: 0;
@@ -332,13 +332,13 @@
         }
     }
 
-    //decorative section
+    //decorative section (HOME)
 
     .decorativeSection {
         display: none;
     }
 
-    // sophie journey section
+    // sophie journey section (HOME)
 
     .sophieJourney {
         padding-top: 50px;
@@ -347,14 +347,14 @@
 
 @media (max-width: 342px) {
     
-    //bottom nav section
+    //bottom nav section (HOME)
 
     .getInTouchNav .iconContainer {
         top: -7px;
     }
 }
 
-// reduced motion media query
+// reduced motion media query (Overall)
 
 @media (prefers-reduced-motion: reduce) {
     html {

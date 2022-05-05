@@ -738,10 +738,12 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 2%;
+  width: 100%;
 }
 .blogForm .formFlex .personalDetails input {
   -ms-flex-preferred-size: 49%;
       flex-basis: 49%;
+  width: 49%;
   border: none;
   padding: 20px 30px;
 }
@@ -774,6 +776,9 @@ footer p {
   opacity: 1;
   font-family: inherit;
   font-style: italic;
+}
+.blogForm .formFlex .personalDetails input[type=text] {
+  margin-right: 2%;
 }
 .blogForm .formFlex textarea {
   border: none;
@@ -964,6 +969,7 @@ footer p {
 .contactOverall .contactInformation {
   -ms-flex-preferred-size: 30.3333333333%;
       flex-basis: 30.3333333333%;
+  width: 30.3333333333%;
   background-color: white;
   height: 50%;
   padding: 30px;
@@ -991,6 +997,7 @@ footer p {
 .contactOverall .blogForm {
   -ms-flex-preferred-size: 66.6666666667%;
       flex-basis: 66.6666666667%;
+  width: 66.6666666667%;
 }
 
 .contactBody footer {
