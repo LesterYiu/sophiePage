@@ -1064,6 +1064,10 @@ footer p {
     font-size: 40px;
   }
 
+  .homeBody .topNav {
+    padding-top: 20px;
+  }
+
   .headerHome .headerContent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
