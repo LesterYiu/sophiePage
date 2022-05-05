@@ -326,8 +326,7 @@
 
                 h3 {
                     font-size: 1.4rem;
-                    margin-left: 90px;
-                    word-wrap: break-word;
+                    margin-left: 75px;
                 }
             }
         }
@@ -343,6 +342,15 @@
 
     .sophieJourney {
         padding-top: 50px;
+    }
+}
+
+@media (max-width: 342px) {
+    
+    //bottom nav section
+
+    .getInTouchNav .iconContainer {
+        top: -7px;
     }
 }
 

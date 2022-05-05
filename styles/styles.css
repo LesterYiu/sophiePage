@@ -1250,8 +1250,7 @@ footer p {
   }
   .bottomNav .bottomNavSection .bottomNavText h3 {
     font-size: 1.4rem;
-    margin-left: 90px;
-    word-wrap: break-word;
+    margin-left: 75px;
   }
 
   .decorativeSection {
@@ -1260,6 +1259,11 @@ footer p {
 
   .sophieJourney {
     padding-top: 50px;
+  }
+}
+@media (max-width: 342px) {
+  .getInTouchNav .iconContainer {
+    top: -7px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
