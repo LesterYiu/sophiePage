@@ -16,21 +16,18 @@
 
     // header
     header {
+        position: relative;
 
         img {
             object-fit: cover;
             width: 100%;
         }
         
-        .wrapper {
+        h1 {
             position: relative;
-        
-            h1 {
-                position: absolute;
-                bottom: -40px;
-                left: 0;
-            }
-        
+            bottom: 45px;
+            left: 0;
+            z-index: 10;
         }
     }
 }
@@ -38,8 +35,8 @@
 //main section
 
 .contactOverall {
-    padding: 100px 0;
     background-color: $whiteShade;
+    padding-bottom: 100px;
 
     .contactFlex {
         display: flex;
@@ -61,7 +58,7 @@
 
         .contactIconContainer {
             margin-right: 30px;
-            padding: 10px 0;
+            margin: 0 10px;
 
             .contactIcon {
                 color: $tertiary;
@@ -81,6 +78,10 @@
     .blogForm {
         flex-basis: calc((100% /3) * 2);
         width: calc((100% /3) * 2);
+    }
+
+    i {
+        font-size: 1.2rem;
     }
 }
 

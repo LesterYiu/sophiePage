@@ -784,7 +784,7 @@ footer p {
   border: none;
   resize: none;
   padding: 20px 30px;
-  margin-bottom: 2%;
+  margin-bottom: 20px;
 }
 .blogForm .formFlex textarea::-webkit-input-placeholder {
   color: #4F4F4F;
@@ -938,23 +938,24 @@ footer p {
 .contactBody .topNav li:nth-child(5) {
   color: #F0EFED;
 }
+.contactBody header {
+  position: relative;
+}
 .contactBody header img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
-.contactBody header .wrapper {
+.contactBody header h1 {
   position: relative;
-}
-.contactBody header .wrapper h1 {
-  position: absolute;
-  bottom: -40px;
+  bottom: 45px;
   left: 0;
+  z-index: 10;
 }
 
 .contactOverall {
-  padding: 100px 0;
   background-color: #F0EFED;
+  padding-bottom: 100px;
 }
 .contactOverall .contactFlex {
   display: -webkit-box;
@@ -982,7 +983,7 @@ footer p {
 }
 .contactOverall .contactInformation .contactIconContainer {
   margin-right: 30px;
-  padding: 10px 0;
+  margin: 0 10px;
 }
 .contactOverall .contactInformation .contactIconContainer .contactIcon {
   color: #F6A823;
@@ -998,6 +999,9 @@ footer p {
   -ms-flex-preferred-size: 66.6666666667%;
       flex-basis: 66.6666666667%;
   width: 66.6666666667%;
+}
+.contactOverall i {
+  font-size: 1.2rem;
 }
 
 .contactBody footer {
@@ -1192,6 +1196,43 @@ footer p {
             justify-content: center;
     margin: 20px 0;
   }
+
+  .contactOverall {
+    padding: 75px 0px 150px 0px;
+  }
+  .contactOverall .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactOverall .contactInformation {
+    width: 66%;
+    position: relative;
+  }
+  .contactOverall .contactInformation .socialMediaBar {
+    position: absolute;
+    top: -33%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .contactOverall .contactInformation .socialMediaBar .contactIconContainer {
+    margin: 0;
+  }
+  .contactOverall i {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 768px) {
   .homeBody .readMore {
@@ -1219,11 +1260,48 @@ footer p {
   .sophieJourney h3 {
     margin-top: 30px;
   }
+
+  .contactBody h1 {
+    font-size: 3.2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contactOverall .contactInformation,
+.contactOverall .blogForm {
+    width: 100%;
+  }
+  .contactOverall .formFlex .personalDetails {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+  }
+  .contactOverall .formFlex .personalDetails input {
+    margin: 0px 0px 20px 0px;
+    width: 100%;
+  }
+  .contactOverall .formFlex .personalDetails input[type=text] {
+    margin-right: 0;
+  }
+}
+@media (max-width: 600px) {
+  .contactBody header img {
+    height: 35vh;
+  }
+  .contactBody header h1 {
+    bottom: 70px;
+    line-height: 3.6rem;
+  }
 }
 @media (max-width: 480px) {
   .topNav .smallDevicesNav button {
     right: 10px;
-    top: -10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 
   .headerHome .wrapper {

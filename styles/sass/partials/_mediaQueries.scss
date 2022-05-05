@@ -2,7 +2,7 @@
 
 @media (max-width: 1240px) {
 
-    // header (HOME)
+    // home header (HOME)
     .headerHome {
         .headerContent {
         
@@ -23,7 +23,7 @@
 
 @media (max-width: 1060px) {
 
-    // header (HOME)
+    // home header (HOME)
     .headerHome {
 
         .headerContent {
@@ -57,7 +57,7 @@
 
 @media (max-width: 940px) {
 
-    // top navigation (HOME)
+    // top navigation (ALL PAGES)
 
     .topNav {
         padding: 40px 0;
@@ -217,7 +217,7 @@
         object-fit: cover;
     }
 
-    // gallery
+    // gallery (HOME)
 
     .galleryFlex {
         flex-direction: column;
@@ -227,6 +227,39 @@
             display: flex;
             justify-content: center;
             margin: 20px 0;
+        }
+    }
+
+    // contact main content(CONTACT PAGE)
+    .contactOverall {
+        padding: 75px 0px 150px 0px;
+        
+        .contactFlex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contactInformation {
+            width: 66%;
+            position: relative;
+
+            .socialMediaBar {
+                position: absolute;
+                top: -33%;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                .contactIconContainer {
+                    margin: 0;
+                }
+            }
+        }
+
+        i {
+            font-size: 1.5rem;
         }
     }
 }
@@ -268,21 +301,74 @@
             margin-top: 30px;
         }
     }
+
+    // contact header (CONTACT PAGE)
+    
+    .contactBody h1 {
+        font-size: 3.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    // contact main content (CONTACT PAGE)
+
+    .contactOverall {
+
+        .contactInformation,
+        .blogForm {
+            width: 100%
+        }
+
+        .formFlex {
+
+            .personalDetails {
+                flex-direction: column;
+                width: 100%;
+                margin: 20px 0px 0px 0px;
+            
+                input {
+                    margin: 0px 0px 20px 0px;
+                    width: 100%;
+
+                    &[type="text"] {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    
+    // contact header (CONTACT)
+
+    .contactBody header {
+        img {
+            height: 35vh;
+        }
+
+        h1 {
+            bottom: 70px;
+            line-height: 3.6rem;
+        }
+    } 
 }
 
 @media (max-width: 480px) {
 
-    //top nav (HOME)
+    //top nav (ALL PAGES)
 
     .topNav {
 
         .smallDevicesNav button {
             right: 10px;
-            top: -10px;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 
-    // header content (HOME)
+    // home header (HOME)
 
     .headerHome {
 
