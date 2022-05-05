@@ -1081,7 +1081,7 @@ footer p {
     border: 4px white solid;
   }
   .headerHome .headerText {
-    margin-top: 90px;
+    margin-top: 100px;
     width: 100%;
   }
   .headerHome .headerText h1 {
@@ -1214,14 +1214,11 @@ footer p {
   }
 }
 @media (max-width: 480px) {
-
-  /* top navigation */
   .topNav .smallDevicesNav button {
     right: 10px;
     top: -10px;
   }
 
-  /* header */
   .headerHome .wrapper {
     width: 100%;
   }
@@ -1235,25 +1232,31 @@ footer p {
     top: -75px;
   }
 
-  /* about sophie section */
-
   .aboutSophie {
     padding: 75px 0;
   }
 
-  /* bottom nav section */
-
   .bottomNav {
     padding-bottom: 0;
   }
-
-  /* decorative section */
+  .bottomNav .bottomNavSection {
+    position: relative;
+  }
+  .bottomNav .bottomNavSection .botNavContainer {
+    position: absolute;
+  }
+  .bottomNav .bottomNavSection .bottomNavText {
+    margin-left: 0;
+  }
+  .bottomNav .bottomNavSection .bottomNavText h3 {
+    font-size: 1.4rem;
+    margin-left: 90px;
+    word-wrap: break-word;
+  }
 
   .decorativeSection {
     display: none;
   }
-
-  /* sophie journey section */
 
   .sophieJourney {
     padding-top: 50px;
