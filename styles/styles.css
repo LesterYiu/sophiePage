@@ -671,7 +671,12 @@ footer p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #A82706;
+}
+.decorativeSection img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sophieJourney {
@@ -1054,6 +1059,9 @@ footer p {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .headerHome .headerContent .headerTitleImage img {
     top: -94px;
@@ -1073,7 +1081,7 @@ footer p {
     border: 4px white solid;
   }
   .headerHome .headerText {
-    padding-top: 90px;
+    margin-top: 90px;
     width: 100%;
   }
   .headerHome .headerText h1 {
@@ -1177,13 +1185,14 @@ footer p {
             justify-content: center;
     margin: 20px 0;
   }
-  .galleryFlex .galleryItem img {
-    border-radius: 15px;
-  }
 }
 @media (max-width: 768px) {
   .homeBody .readMore {
     min-width: 60%;
+  }
+
+  .sophieHistory h3 {
+    margin-top: 20px;
   }
 
   .sophieJourney .sophieJourneyFlex {
@@ -1202,6 +1211,52 @@ footer p {
   }
   .sophieJourney h3 {
     margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+
+  /* top navigation */
+  .topNav .smallDevicesNav button {
+    right: 10px;
+    top: -10px;
+  }
+
+  /* header */
+  .headerHome .wrapper {
+    width: 100%;
+  }
+  .headerHome .headerContent {
+    top: 10%;
+  }
+  .headerHome .headerContent h1 {
+    font-size: 3.5rem;
+  }
+  .headerHome .headerContent .headerTitleImage img {
+    top: -75px;
+  }
+
+  /* about sophie section */
+
+  .aboutSophie {
+    padding: 75px 0;
+  }
+
+  /* bottom nav section */
+
+  .bottomNav {
+    padding-bottom: 0;
+  }
+
+  /* decorative section */
+
+  .decorativeSection {
+    display: none;
+  }
+
+  /* sophie journey section */
+
+  .sophieJourney {
+    padding-top: 50px;
   }
 }
 @media (prefers-reduced-motion: reduce) {

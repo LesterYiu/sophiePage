@@ -88,6 +88,7 @@
         .headerContent {
             flex-direction: column;
             padding-top: 0;
+            justify-content: center;
 
             .headerTitleImage {
             
@@ -109,7 +110,7 @@
         }
 
         .headerText {
-            padding-top: 90px;
+            margin-top: 90px;
             width: 100%;
 
             h1 {
@@ -226,10 +227,6 @@
             display: flex;
             justify-content: center;
             margin: 20px 0;
-
-            img {
-                border-radius: 15px;
-            }
         }
     }
 }
@@ -240,6 +237,12 @@
 
     .homeBody .readMore {
         min-width: 60%;
+    }
+
+    // sophie travelled section
+
+    .sophieHistory h3 {
+        margin-top: 20px;
     }
 
     // sophie journey
@@ -264,6 +267,64 @@
         h3 {
             margin-top: 30px;
         }
+    }
+}
+
+@media (max-width: 480px) {
+
+    //top nav
+
+    .topNav {
+
+        .smallDevicesNav button {
+            right: 10px;
+            top: -10px;
+        }
+    }
+
+    // header content
+
+    .headerHome {
+
+        .wrapper {
+            width: 100%;
+        }
+
+        .headerContent {
+            top: 10%;
+
+            h1 {
+                font-size: 3.5rem;
+            }
+
+            .headerTitleImage img {
+                top: -75px;
+            }
+        }
+    }
+
+    // about sophie section
+
+        .aboutSophie {
+            padding: 75px 0;
+        }
+
+    // bottom nav section
+
+    .bottomNav {
+        padding-bottom: 0;
+    }
+
+    //decorative section
+
+    .decorativeSection {
+        display: none;
+    }
+
+    // sophie journey section
+
+    .sophieJourney {
+        padding-top: 50px;
     }
 }
 

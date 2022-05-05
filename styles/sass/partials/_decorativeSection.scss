@@ -2,5 +2,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: $senary;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
