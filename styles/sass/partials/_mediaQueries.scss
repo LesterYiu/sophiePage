@@ -556,11 +556,8 @@
 
     // blog main content (BLOG)
 
-    .authorImageContainer {
-
-        img {
-            width: auto;
-        }
+    .blogFlex .authorImageContainer {
+        height: auto;
     }
 }
 

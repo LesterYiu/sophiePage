@@ -1461,8 +1461,8 @@ footer p {
     padding-top: 50px;
   }
 
-  .authorImageContainer img {
-    width: auto;
+  .blogFlex .authorImageContainer {
+    height: auto;
   }
 }
 @media (max-width: 342px) {
