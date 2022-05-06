@@ -282,6 +282,31 @@
             font-size: 1.5rem;
         }
     }
+
+    // Blog main content (BLOG)
+
+    .blogFlex {
+        flex-direction: column;
+
+        .blogInformation {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .blogAuthor,
+        .recentPosts {
+            width: 49%;
+        }
+
+        .blogContent {
+            width: 100%;
+        }
+
+        .blogPost {
+            margin-top: 20px;
+        }
+    }
 }
 
 @media (max-width:768px) {
@@ -290,6 +315,10 @@
 
     .homeBody .readMore {
         min-width: 60%;
+    }
+
+    .wrapper {
+        max-width: 90%;
     }
 
     // sophie travelled section (HOME)
@@ -357,22 +386,99 @@
             }
         }
     }
+
+    // blog main content (BLOG)
+
+    .blogFlex {
+
+        .blogInformation {
+                flex-direction: column;
+                width: 100%;
+        }
+        
+        .blogAuthor,
+        .recentPosts {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .authorImageContainer {
+            height: 400px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0% 35%;
+            }
+        }
+
+        .commentImageContainer img {
+            border-radius: 50%;
+            margin: 0 0 10px 10px;
+        }
+
+        .blogComments .comment {
+            flex-direction: column;
+
+            .commentText {
+                width: 100%
+            }
+        }
+
+        .formFlex {
+            flex-direction: column;
+
+            .personalDetails {
+                flex-direction: column;
+
+                input[type="text"],
+                input[type="email"] {
+                        width: 100%;
+                        margin: 0 0 10px 0;
+                    }
+
+            }
+            
+        }
+    }
 }
 
 @media (max-width: 600px) {
     
+    // overall
+
+    .headerImageContainer {
+            height: 25vh;
+    }
     // contact header (CONTACT)
 
     .contactBody header {
         img {
-            height: 35vh;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
 
         h1 {
             bottom: 70px;
             line-height: 3.6rem;
         }
-    } 
+    }
+    // blog main content (BLOG)
+
+    .blogBody {
+        
+        .headerImageContainer {
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: 65%;
+            }
+        }
+    }
 }
 
 @media (max-width: 480px) {
@@ -386,13 +492,13 @@
         }
     }
 
+    .wrapper {
+        width: 100%;
+    }
+
     // home header (HOME)
 
     .headerHome {
-
-        .wrapper {
-            width: 100%;
-        }
 
         .headerContent {
             top: 10%;
@@ -446,6 +552,15 @@
 
     .sophieJourney {
         padding-top: 50px;
+    }
+
+    // blog main content (BLOG)
+
+    .authorImageContainer {
+
+        img {
+            width: auto;
+        }
     }
 }
 
