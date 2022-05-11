@@ -21,11 +21,33 @@
     // Create a scroll to top of page once scrolled through a certain amount of pixels
     // Create a modal that pops up after a certain amount of time or a certain amount of pixels scrolled with keyboard navigation in mind.
 
+
+    // Global object
+
     const overlayMenu = {}
 
-    const hamburgerMenuIcon = document.querySelector('.hamburgerIcon');
+    // Storing variables
+    overlayMenu.hamburgerMenuIcon = document.querySelector('.hamburgerIcon');
 
+    overlayMenu.hamburgerOverlayMenu = document.querySelector('.hamburgerOverlayMenu');
 
-    hamburgerMenuIcon.addEventListener('click')
+    overlayMenu.exitButton = document.querySelector('.exitIcon');
+
+    // Stating methods
+    overlayMenu.addOverlayMenu = () => {
+        overlayMenu.hamburgerOverlayMenu.setAttribute('style','display:block');
+    }
+
+    overlayMenu.removeOverlayMenu = () => {
+        overlayMenu.hamburgerOverlayMenu.setAttribute('style','display:none');
+    }
+
+    // Initializing
+    overlayMenu.init = () => {
+        overlayMenu.hamburgerMenuIcon.addEventListener('click', overlayMenu.addOverlayMenu);
+        overlayMenu.exitButton.addEventListener('click', overlayMenu.removeOverlayMenu);
+    }
+
+    overlayMenu.init();
 
     

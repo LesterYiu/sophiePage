@@ -1014,7 +1014,7 @@ footer p {
   bottom: 0;
 }
 
-.hamburgerIconMenu {
+.hamburgerOverlayMenu {
   display: none;
   position: fixed;
   top: 0;
@@ -1025,10 +1025,10 @@ footer p {
   background-color: #F6A823;
   min-height: 100vh;
 }
-.hamburgerIconMenu ul {
+.hamburgerOverlayMenu ul {
   min-height: 100%;
 }
-.hamburgerIconMenu ul a {
+.hamburgerOverlayMenu ul a {
   color: white;
   display: block;
   text-transform: uppercase;
@@ -1038,7 +1038,7 @@ footer p {
   letter-spacing: 1px;
   margin: 30px 0;
 }
-.hamburgerIconMenu .overlayMenuFlex {
+.hamburgerOverlayMenu .overlayMenuFlex {
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1054,11 +1054,12 @@ footer p {
       -ms-flex-align: center;
           align-items: center;
 }
-.hamburgerIconMenu .exitIcon {
+.hamburgerOverlayMenu .exitIcon {
   position: absolute;
   top: 30px;
   right: 50px;
   font-size: 2.2rem;
+  cursor: pointer;
 }
 
 @media (max-width: 1240px) {
