@@ -1,0 +1,41 @@
+.hamburgerIconMenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+    background-color: $tertiary;
+    min-height: 100vh;
+
+    ul {
+        min-height: 100%;
+
+        a {
+            color: white;
+            display: block;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 2.1rem;
+            line-height: 2.5rem;
+            letter-spacing: 1px;
+            margin: 30px 0;
+        }
+    }
+
+    .overlayMenuFlex {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exitIcon {
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        font-size: 2.2rem;
+    }
+}

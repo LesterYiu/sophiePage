@@ -1014,6 +1014,53 @@ footer p {
   bottom: 0;
 }
 
+.hamburgerIconMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  background-color: #F6A823;
+  min-height: 100vh;
+}
+.hamburgerIconMenu ul {
+  min-height: 100%;
+}
+.hamburgerIconMenu ul a {
+  color: white;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.hamburgerIconMenu .overlayMenuFlex {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hamburgerIconMenu .exitIcon {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 2.2rem;
+}
+
 @media (max-width: 1240px) {
   .headerHome .headerContent h1 {
     font-size: 5.5rem;
