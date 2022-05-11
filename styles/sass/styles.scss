@@ -1,3 +1,7 @@
+// hamburger icon (for all pages)
+
+@import "./partials/hamburgerIcon";
+
 // set up and base styles for all pages
 
 @import "./partials/setup";
@@ -7,14 +11,10 @@
 @import "./partials/base";
 @import "./partials/skipContent";
 
-// navigation & footer for all pages
+// navigation & footer (for all pages)
 
 @import "./partials/topNav";
 @import "./partials/footer";
-
-// hamburger icon (for all pages)
-
-@import "./partials/hamburgerIcon";
 
 // home page
 

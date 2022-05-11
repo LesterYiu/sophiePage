@@ -43,6 +43,26 @@ a {
     display: inline-block;
 }
 
+//overlay menu fade in
+    
+.hamburgerOverlayMenu {
+    animation: fadeInAnimation ease 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.rotateHamburgerIcon {
+    animation: rotateMenuIcon ease 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.unrotateHamburgerIcon {
+    animation: unrotateMenuIcon ease 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 // page load fade in
 body {
     animation: fadeInAnimation ease 2s ;
@@ -57,5 +77,25 @@ body {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes rotateMenuIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes unrotateMenuIcon {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
     }
 }

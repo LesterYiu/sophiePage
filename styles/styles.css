@@ -1,4 +1,52 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap");
+.hamburgerOverlayMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 20;
+  background-color: #F6A823;
+  min-height: 100vh;
+}
+.hamburgerOverlayMenu ul {
+  min-height: 100%;
+}
+.hamburgerOverlayMenu ul a {
+  color: white;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+  margin: 30px 0;
+}
+.hamburgerOverlayMenu .overlayMenuFlex {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.hamburgerOverlayMenu .exitIcon {
+  position: absolute;
+  top: 20px;
+  right: 65px;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -389,6 +437,33 @@ a {
   display: inline-block;
 }
 
+.hamburgerOverlayMenu {
+  -webkit-animation: fadeInAnimation ease 0.3s;
+          animation: fadeInAnimation ease 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.rotateHamburgerIcon {
+  -webkit-animation: rotateMenuIcon ease 0.3s;
+          animation: rotateMenuIcon ease 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.unrotateHamburgerIcon {
+  -webkit-animation: unrotateMenuIcon ease 0.3s;
+          animation: unrotateMenuIcon ease 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 body {
   -webkit-animation: fadeInAnimation ease 2s;
           animation: fadeInAnimation ease 2s;
@@ -413,6 +488,46 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes rotateMenuIcon {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+@keyframes rotateMenuIcon {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
+@-webkit-keyframes unrotateMenuIcon {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes unrotateMenuIcon {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 .skipMainContent {
@@ -488,54 +603,6 @@ footer p {
   color: #F0EFED;
   padding: 10px 0;
   text-align: center;
-}
-
-.hamburgerOverlayMenu {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 20;
-  background-color: #F6A823;
-  min-height: 100vh;
-}
-.hamburgerOverlayMenu ul {
-  min-height: 100%;
-}
-.hamburgerOverlayMenu ul a {
-  color: white;
-  display: block;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2.1rem;
-  line-height: 2.5rem;
-  letter-spacing: 1px;
-  margin: 30px 0;
-}
-.hamburgerOverlayMenu .overlayMenuFlex {
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.hamburgerOverlayMenu .exitIcon {
-  position: absolute;
-  top: 30px;
-  right: 50px;
-  font-size: 2.2rem;
-  cursor: pointer;
 }
 
 .headerHome {

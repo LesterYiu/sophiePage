@@ -33,14 +33,30 @@
 
     overlayMenu.exitButton = document.querySelector('.exitIcon');
 
+    overlayMenu.aboutOverlayButton = document.querySelectorAll('.overlayMenuFlex a');
+
+    console.log(overlayMenu.aboutOverlayButton); //returns a node-list, we can iterate through this
+
     // Stating methods
     overlayMenu.addOverlayMenu = () => {
         overlayMenu.hamburgerOverlayMenu.setAttribute('style','display:block');
+        overlayMenu.addClassRotateMenu();
     }
 
     overlayMenu.removeOverlayMenu = () => {
         overlayMenu.hamburgerOverlayMenu.setAttribute('style','display:none');
+        overlayMenu.removeClassRotateMenu();
     }
+
+    overlayMenu.addClassRotateMenu = () => {
+        overlayMenu.hamburgerMenuIcon.classList.toggle('rotateHamburgerIcon');
+    }
+
+    overlayMenu.removeClassRotateMenu = () => {
+        overlayMenu.hamburgerMenuIcon.classList.toggle('rotateHamburgerIcon');
+    }
+
+
 
     // Initializing
     overlayMenu.init = () => {
