@@ -24,43 +24,157 @@
 
     // Global object
 
-    const overlayMenu = {}
+    const app = {}
 
     // Storing variables
-    overlayMenu.hamburgerMenuIcon = document.querySelector('.hamburgerIcon');
+    app.hamburgerMenuIcon = document.querySelector('.hamburgerIcon');
 
-    overlayMenu.hamburgerOverlayMenu = document.querySelector('.hamburgerOverlayMenu');
+    app.hamburgerOverlayMenu = document.querySelector('.hamburgerOverlayMenu');
 
-    overlayMenu.exitButton = document.querySelector('.exitIcon');
+    app.exitButton = document.querySelector('.exitIcon');
 
-    overlayMenu.overlayAbout = document.querySelector('.overlayAbout');
+    app.overlayAbout = document.querySelector('.overlayAbout');
+
+    app.allAnchorEl = document.querySelectorAll('a');
+
+    app.allButtonEl = document.querySelectorAll('button');
+
+    app.allIconEl = document.querySelectorAll('i');
+
+    app.anchorFilteredArray = [];
+
+    app.enableIndexAnchors = [];
 
     // Stating methods
-    overlayMenu.addOverlayMenu = () => {
-        overlayMenu.hamburgerOverlayMenu.setAttribute('style','display:block');
-        overlayMenu.addClassRotateMenu();
+    app.addOverlayMenu = () => {
+        app.hamburgerOverlayMenu.style.display = 'block';
     }
 
-    overlayMenu.removeOverlayMenu = () => {
-        overlayMenu.hamburgerOverlayMenu.setAttribute('style','display:none');
-        overlayMenu.removeClassRotateMenu();
+    app.removeOverlayMenu = () => {
+        app.hamburgerOverlayMenu.setAttribute('style','display:none');
     }
 
-    overlayMenu.addClassRotateMenu = () => {
-        overlayMenu.hamburgerMenuIcon.classList.toggle('rotateHamburgerIcon');
+    app.addClassRotateMenu = () => {
+        app.hamburgerMenuIcon.classList.toggle('rotateHamburgerIcon');
     }
 
-    overlayMenu.removeClassRotateMenu = () => {
-        overlayMenu.hamburgerMenuIcon.classList.toggle('rotateHamburgerIcon');
+    app.removeClassRotateMenu = () => {
+        app.hamburgerMenuIcon.classList.toggle('unrotateHamburgerIcon');
     }
+
+    for(let i = 0; i < app.allAnchorEl.length; i++){
+        if(app.allAnchorEl[i].tabIndex === 0) {
+            app.anchorFilteredArray.push(app.allAnchorEl[i]);
+        }
+    };    
+
+    for (let i = 0; i < app.anchorFilteredArray.length; i++){
+        if (app.anchorFilteredArray[i].parentElement.parentElement.className !== "overlayMenuFlex") {
+            app.enableIndexAnchors.push(app.anchorFilteredArray[i]);
+        }
+    };
 
     // Initializing
-    overlayMenu.init = () => {
-        overlayMenu.hamburgerMenuIcon.addEventListener('click', overlayMenu.addOverlayMenu);
-        overlayMenu.exitButton.addEventListener('click', overlayMenu.removeOverlayMenu);
-        overlayMenu.overlayAbout.addEventListener('click', overlayMenu.removeOverlayMenu);
+    app.init = () => {
+        app.hamburgerMenuIcon.addEventListener('click', function(){
+            app.addOverlayMenu();
+            app.addClassRotateMenu();        
+
+            if (app.hamburgerOverlayMenu.style.display === "block") {
+                app.hamburgerMenuIcon.tabindex = -1;
+
+                for(let i = 0; i < app.enableIndexAnchors.length; i++){
+                    app.enableIndexAnchors[i].tabIndex = -1;
+                };
+
+                for(let i = 0; i < app.allIconEl.length; i++){
+                    if (app.allIconEl[i].className === 'fa-solid fa-circle-xmark exitIcon') {
+                        app.allIconEl[i].tabIndex = 1;
+                    } else {
+                        app.allIconEl[i].tabIndex = -1;
+                    }
+                }
+            }
+        });
+
+        app.hamburgerMenuIcon.addEventListener('keydown', function (e){
+            if(e.key === 'Enter') {
+                app.addOverlayMenu();
+                app.addClassRotateMenu();   
+
+                if (app.hamburgerOverlayMenu.style.display === "block") {
+                    app.hamburgerMenuIcon.tabindex = -1;
+
+                    for(let i = 0; i < app.enableIndexAnchors; i++){
+                        app.enableIndexAnchors[i].tabIndex = -1;
+                    };
+
+                    for(let i = 0; i < app.allIconEl.length; i++){
+                        if (app.allIconEl[i].className === 'fa-solid fa-circle-xmark exitIcon') {
+                            app.allIconEl[i].tabIndex = 1;
+                        } else {
+                            app.allIconEl[i].tabIndex = -1;
+                        }
+                    }
+                }
+            }
+        });
+
+        app.exitButton.addEventListener('click', function(){
+            app.removeOverlayMenu();
+            app.removeClassRotateMenu();
+
+            if (app.hamburgerOverlayMenu.style.display === "none") {
+                app.hamburgerMenuIcon.tabindex = 0;
+
+                for(let i = 0; i < app.enableIndexAnchors.length; i++){
+                    app.enableIndexAnchors[i].tabIndex = 0;
+                };
+
+                for(let i = 0; i < app.allIconEl.length; i++){
+                    if (app.allIconEl[i].className === 'fa-solid fa-circle-xmark exitIcon') {
+                        app.allIconEl[i].tabIndex = -1;
+                    } else {
+                        app.allIconEl[i].tabIndex = 0;
+                    }
+                }
+            }
+        });
+
+        app.exitButton.addEventListener('keydown', function(e){
+            if (e.key === 'Enter') {
+                app.removeOverlayMenu();
+                app.removeClassRotateMenu();
+
+                if (app.hamburgerOverlayMenu.style.display === "none") {
+                    app.hamburgerMenuIcon.tabindex = 0;
+
+                    for(let i = 0; i < app.enableIndexAnchors.length; i++){
+                        app.enableIndexAnchors[i].tabIndex = 0;
+                    };
+
+                    for(let i = 0; i < app.allIconEl.length; i++){
+                        if (app.allIconEl[i].className === 'fa-solid fa-circle-xmark exitIcon') {
+                            app.allIconEl[i].tabIndex = -1;
+                        } else {
+                            app.allIconEl[i].tabIndex = 0;
+                        }
+                    }
+                }                
+            }
+        });
+        
+        app.overlayAbout.addEventListener('click', function(){
+            app.removeOverlayMenu();    
+        });
+
+        app.overlayAbout.addEventListener('keydown', function(e){
+            if(e.key === 'Enter') {
+                app.removeOverlayMenu();    
+            }
+        });
     }
 
-    overlayMenu.init();
+    app.init();
 
     
