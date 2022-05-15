@@ -1,26 +1,7 @@
 // PSEUDO CODE
 
-    // Create a full overlay menu with hamburger icon
-        //Ensure that keyboard navigation is dealt with using conditional statement
-
-            /* 
-                Store variable with element node found by querying 
-
-                Register an event listener/handler to listen for hamburger icon click
-
-                Create/use a callback function that will change the css to display: block on the overlay menu
-
-                Store variable for the exit button 
-
-                Create/use a callback function that will change the css to display: none on the overlay menu
-
-                Write conditional statements that will set tab index behind the overlay to non existant until the overlay menu is gone
-
-                    Afterwards, think about ways to make this more accessible to screen readers (like using ARIA attributes and sr-only classes)
-            */
     // Create a scroll to top of page once scrolled through a certain amount of pixels
     // Create a modal that pops up after a certain amount of time or a certain amount of pixels scrolled with keyboard navigation in mind.
-
 
     // Global object
 
@@ -37,9 +18,9 @@
 
     app.allAnchorEl = document.querySelectorAll('a');
 
-    app.allButtonEl = document.querySelectorAll('button');
-
     app.allIconEl = document.querySelectorAll('i');
+
+    app.allInputEl = document.querySelectorAll('input');
 
     app.anchorFilteredArray = [];
 
@@ -90,10 +71,26 @@
                 for(let i = 0; i < app.allIconEl.length; i++){
                     if (app.allIconEl[i].className === 'fa-solid fa-circle-xmark exitIcon') {
                         app.allIconEl[i].tabIndex = 1;
+                    } else if (app.allIconEl[i].parentElement.parentElement.parentElement.className === "socialMediaBar") {
+                        app.allIconEl[i].tabIndex = -1;                        
                     } else {
                         app.allIconEl[i].tabIndex = -1;
                     }
                 }
+
+                for (let i = 0; i < app.allInputEl.length; i++) {
+                    app.allInputEl[i].tabIndex = -1;
+                }
+
+                if (document.querySelector('textarea') !== null) {
+                    app.textAreaEl = document.querySelector('textarea');
+                    app.textAreaEl.tabIndex = -1;
+                };
+
+                if (document.querySelector('button[type="submit"]') !== null) {
+                    app.submitButtonEl = document.querySelector('button[type="submit"]');
+                    app.submitButtonEl = -1;
+                };
             }
         });
 
@@ -112,10 +109,26 @@
                     for(let i = 0; i < app.allIconEl.length; i++){
                         if (app.allIconEl[i].className === 'fa-solid fa-circle-xmark exitIcon') {
                             app.allIconEl[i].tabIndex = 1;
+                        } else if (app.allIconEl[i].parentElement.parentElement.parentElement.className === "socialMediaBar") {
+                        app.allIconEl[i].tabIndex = -1;                        
                         } else {
                             app.allIconEl[i].tabIndex = -1;
                         }
                     }
+
+                    for (let i = 0; i < app.allInputEl.length; i++) {
+                        app.allInputEl[i].tabIndex = -1;
+                    }
+
+                    if (document.querySelector('textarea') !== null) {
+                        app.textAreaEl = document.querySelector('textarea');
+                        app.textAreaEl.tabIndex = -1;
+                    };
+
+                    if (document.querySelector('button[type="submit"]') !== null) {
+                        app.submitButtonEl = document.querySelector('button[type="submit"]');
+                        app.submitButtonEl = -1;
+                    };
                 }
             }
         });
@@ -134,10 +147,26 @@
                 for(let i = 0; i < app.allIconEl.length; i++){
                     if (app.allIconEl[i].className === 'fa-solid fa-circle-xmark exitIcon') {
                         app.allIconEl[i].tabIndex = -1;
+                    } else if (app.allIconEl[i].parentElement.parentElement.parentElement.className === "socialMediaBar") {
+                        app.allIconEl[i].tabIndex = -1;                        
                     } else {
                         app.allIconEl[i].tabIndex = 0;
                     }
                 }
+
+                for (let i = 0; i < app.allInputEl.length; i++) {
+                    app.allInputEl[i].tabIndex = 0;
+                }
+
+                if (document.querySelector('textarea') !== null) {
+                    app.textAreaEl = document.querySelector('textarea');
+                    app.textAreaEl.tabIndex = 0;
+                };
+
+                if (document.querySelector('button[type="submit"]') !== null) {
+                    app.submitButtonEl = document.querySelector('button[type="submit"]');
+                    app.submitButtonEl = 0;
+                };
             }
         });
 
@@ -156,10 +185,26 @@
                     for(let i = 0; i < app.allIconEl.length; i++){
                         if (app.allIconEl[i].className === 'fa-solid fa-circle-xmark exitIcon') {
                             app.allIconEl[i].tabIndex = -1;
+                        } else if (app.allIconEl[i].parentElement.parentElement.parentElement.className === "socialMediaBar") {
+                        app.allIconEl[i].tabIndex = -1;                        
                         } else {
                             app.allIconEl[i].tabIndex = 0;
                         }
                     }
+
+                    for (let i = 0; i < app.allInputEl.length; i++) {
+                        app.allInputEl[i].tabIndex = 0;
+                    }
+
+                    if (document.querySelector('textarea') !== null) {
+                        app.textAreaEl = document.querySelector('textarea');
+                        app.textAreaEl.tabIndex = 0;
+                    };
+
+                    if (document.querySelector('button[type="submit"]') !== null) {
+                        app.submitButtonEl = document.querySelector('button[type="submit"]');
+                        app.submitButtonEl = 0;
+                    };
                 }                
             }
         });
