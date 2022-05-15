@@ -5,7 +5,9 @@
 
     // Global object
 
-    const app = {}
+    const app = {};
+
+    const scrollApp = {};
 
     // Storing variables
     app.hamburgerMenuIcon = document.querySelector('.hamburgerIcon');
@@ -62,6 +64,18 @@
             app.enableIndexAnchors.push(app.anchorFilteredArray[i]);
         }
     }
+
+    window.addEventListener('scroll', function() {
+        const scrolledAmount = document.documentElement.scrollHeight - window.innerHeight;
+
+        const scrolledHalf = (scrolledAmount / 2);
+
+        const scrolled = window.scrollY;
+
+        if (scrolled >= scrolledHalf){
+            console.log('you have reached half way')
+        }
+    });
 
     // Initializing
     app.init = () => {
