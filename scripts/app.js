@@ -193,13 +193,7 @@
                 };
 
                 for(let i = 0; i < app.allIconEl.length; i++){
-                    if (app.allIconEl[i].className === 'fa-solid fa-circle-xmark exitIcon') {
-                        app.allIconEl[i].tabIndex = -1;
-                    } else if (app.allIconEl[i].parentElement.parentElement.parentElement.className === "socialMediaBar") {
-                        app.allIconEl[i].tabIndex = -1;                        
-                    } else {
-                        app.allIconEl[i].tabIndex = 0;
-                    }
+                    app.allIconEl[i].tabIndex = -1;
                 }
 
                 for (let i = 0; i < app.allInputEl.length; i++) {
@@ -240,8 +234,10 @@
                     for(let i = 0; i < app.allIconEl.length; i++){
                         if (app.allIconEl[i].className === 'fa-solid fa-circle-xmark exitIcon') {
                             app.allIconEl[i].tabIndex = -1;
+                        } else if (app.allIconEl[i].className === 'fa-solid fa-arrow-up-long') {
+                            app.allIconEl[i].tabIndex = -1;
                         } else if (app.allIconEl[i].parentElement.parentElement.parentElement.className === "socialMediaBar") {
-                        app.allIconEl[i].tabIndex = -1;                        
+                            app.allIconEl[i].tabIndex = -1;                        
                         } else {
                             app.allIconEl[i].tabIndex = 0;
                         }
