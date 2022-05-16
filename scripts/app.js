@@ -24,6 +24,8 @@
 
     app.allInputEl = document.querySelectorAll('input');
 
+    app.scrollToTopEl = document.querySelector('.scrollToTop');
+
     app.anchorFilteredArray = [];
 
     app.enableIndexAnchors = [];
@@ -65,20 +67,23 @@
         }
     }
 
-    window.addEventListener('scroll', function() {
-        const scrolledAmount = document.documentElement.scrollHeight - window.innerHeight;
-
-        const scrolledHalf = (scrolledAmount / 2);
-
-        const scrolled = window.scrollY;
-
-        if (scrolled >= scrolledHalf){
-            console.log('you have reached half way')
-        }
-    });
-
     // Initializing
     app.init = () => {
+
+        window.addEventListener('scroll', function() {
+            const scrolledAmount = document.documentElement.scrollHeight - window.innerHeight;
+
+            const scrolledHalf = (scrolledAmount / 2);
+
+            const scrolled = window.scrollY;
+
+            if (scrolled >= scrolledHalf) {
+                app.scrollToTopEl.style.display = 'block';
+            } else if (scrolled <= scrolledHalf) {
+                app.scrollToTopEl.style.display = 'none';
+            }
+        });
+        
         app.hamburgerMenuIcon.addEventListener('click', function(){
 
             for (let i = 0; i < app.hamburgerMenuIcon.classList.length; i++){

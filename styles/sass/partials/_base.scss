@@ -70,6 +70,22 @@ body {
     animation-fill-mode: forwards;
 }
 
+//scroll to top button
+
+.scrollToTop {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 30;
+    bottom: 20%;
+    right: 2%;
+    border-radius: 15%;
+    padding: 10px 15px;
+    display: none;
+    animation: fadeInAnimation ease 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
